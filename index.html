@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+</head>
+
+<body>
+    <caption>
+        Тестовое задание для DELTA. Яркина Анастасия.
+    </caption>
+    <table>
+        <colgroup>
+            <col class="grey" />
+            <col class="blue" />
+            <col class="grey" />
+            <col class="grey" />
+            <!-- <col class="red" />
+            <col class="green" /> -->
+        </colgroup>
+        <thead height="40" ;>
+            <tr>
+                <th>Показатель</th>
+                <th>Текущий день</th>
+                <th>Вчера</th>
+                <th>Этот день недели</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+
+            <tr>
+                <td class="show">Выручка, руб</td>
+                <td class="show">500 521</td>
+                <td class="show">480 521 4%</td>
+                <td class="show">4 805 121</td>
+            </tr>
+
+            <tr>
+                <td colspan="4" id="container" class="hidden"> </td>
+            </tr>
+
+
+            <tr>
+                <td>Наличные</td>
+                <td>300 000</td>
+                <td>300 000 0%</td>
+                <td>300 000</td>
+            </tr>
+            <div id="hidden_cash" class="highcharts-figure hidden">
+                <div id="chart2"></div>
+            </div>
+
+
+            <tr>
+                <td>Безналичный расчет</td>
+                <td>100 000</td>
+                <td>100 000 0%</td>
+                <td>100 000</td>
+            </tr>
+            <div id="hidden_non_cash" class="highcharts-figure hidden">
+                <div id="chart3"></div>
+            </div>
+
+
+            <tr>
+                <td>Кредитные карты</td>
+                <td>100 521</td>
+                <td>100 521 0%</td>
+                <td>100 521</td>
+            </tr>
+            <div id="hidden_credit" class="highcharts-figure hidden">
+                <div id="chart4"></div>
+            </div>
+
+
+
+            <tr>
+                <td>Средний чек, руб</td>
+                <td>1 300 </td>
+                <td>900 44%</td>
+                <td>900</td>
+            </tr>
+            <div id="hidden_average_check" class="highcharts-figure hidden">
+                <div id="chart5"></div>
+            </div>
+
+
+            <tr>
+                <td>Средний гость, руб</td>
+                <td>1 200</td>
+                <td>800 50%</td>
+                <td>800</td>
+            </tr>
+
+            <div id="hidden_average_guest" class="highcharts-figure hidden">
+                <div id="chart6"></div>
+            </div>
+
+
+            <tr>
+                <td>Удаления из чека (после оплаты), руб</td>
+                <td>1 000</td>
+                <td>1100 -9%</td>
+                <td>900</td>
+            </tr>
+            <div id="hidden_del_after" class="highcharts-figure hidden">
+                <div id="chart7"></div>
+            </div>
+
+
+            <tr>
+                <td>Удаления из чека (до оплаты), руб</td>
+                <td>1 300</td>
+                <td>1 300 0%</td>
+                <td>900</td>
+            </tr>
+            <div id="hidden_del_before" class="highcharts-figure hidden">
+                <div id="chart8"></div>
+            </div>
+
+            <tr>
+                <td>Количество чеков</td>
+                <td>34</td>
+                <td>36 -6%</td>
+                <td>34</td>
+            </tr>
+            <div id="hidden_cheks_number" class="highcharts-figure hidden">
+                <div id="chart9"></div>
+            </div>
+
+
+            <tr>
+                <td>Количество гостей</td>
+                <td>34</td>
+                <td>36 -6%</td>
+                <td>32</td>
+            </tr>
+            <div id="hidden_guests_number" class="highcharts-figure hidden">
+                <div id="chart10"></div>
+            </div>
+        </tbody>
+
+
+    </table>
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
